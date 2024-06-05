@@ -28,7 +28,7 @@ export default function DonScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  container: {  
     flex: 1,
     backgroundColor: "ffffffff",
     alignItems: "center",
