@@ -5,24 +5,7 @@ export default function DonScreen() {
   const [don, setDon] = useState(0)
   return (
     <View style={styles.container}>
-      <Text style={styles.heading}>Faites nous un don !</Text>
-      <Text style={styles.paragraph}>
-      Nous sommes de retour. Pour vous jouer un mauvais tour. Afin de préserver le monde de la dévastation. 
-      Afin de rallier tous les peuples à notre nation. Afin d'écraser l'Amour et la Vérité. Afin d'étendre notre pouvoir jusqu'à la Voie Lactée. 
-      Jessie, James. La Team Rocket, plus rapide que la lumière. Rendez-vous tous ou ce sera la guerre.
-      </Text>
-      <View style={styles.div}>
-        <TextInput
-          style={styles.input}
-          value={don}
-          placeholder="Entrez la valeur du don"
-          keyboardType="numeric"
-          onChangeText={setDon}
-        />
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Envoyer</Text>
-        </TouchableOpacity>
-      </View>
+      <Text>En Developpement</Text>
     </View>
   );
 }

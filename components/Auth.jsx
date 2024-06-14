@@ -24,17 +24,14 @@ export default function Auth() {
   
 
   async function signInWithEmail() {
-    // setLoading(true);
-    // const { error } = await supabase.auth.signInWithPassword({
-    //   email: email,
-    //   password: password,
-    // });
+    setLoading(true);
+    const { error } = await supabase.auth.signInWithPassword({
+      email: email,
+      password: password,
+    });
 
-    // if (error) Alert.alert(error.message);
-    // setLoading(false);
-    const response = await supabase.auth.signInWithPassword({email: "benji.seixeiro@gmail.com" , password: "testeur"})
-    // const session = await supabase.auth.getSession()
-    console.log('response: ', response)
+    if (error) Alert.alert(error.message);
+    setLoading(false);
   }
 
   async function signUpWithEmail() {
